@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.flex-item-1 {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 320px;
+  border-radius: 28px;
+  margin-right: -22px;
+  z-index: 2;
+}
+
+.heading-primary {
+  font-size: 18px;
+  color: hsl(221, 100%, 96%);
+  margin-top: 24px;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  padding: 32px 42px;
+  border-radius: 50%;
+  margin-top: 28px;
+}
+
+.score {
+  font-size: 64px;
+  color: hsl(0, 0%, 100%);
+}
+
+.score-tetiary {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+
+.heading-tertiary {
+  font-size: 24px;
+  color: hsl(221, 100%, 96%);
+  margin-top: 28px;
+  font-weight: 700;
+}
+
+.analysis {
+  color: hsl(241, 100%, 89%);
+  width: 230px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* FLEX CONTAINER 2 */
+
+.flex-item-2 {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 4px 6px 4px 2px hsla(241, 100%, 89%, 0.205);
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 320px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.heading-2 {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.icon-flex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.box-1 {
+  background-color: hsla(0, 100%, 67%, 0.06);
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 9px;
+  padding: 12px;
+}
+
+.box-2 {
+  background-color: hsla(39, 100%, 56%, 0.06);
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 9px;
+  padding: 12px;
+}
+
+.box-3 {
+  background-color: hsla(166, 100%, 37%, 0.06);
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 9px;
+  padding: 12px;
+}
+
+.box-4 {
+  background-color: hsla(234, 85%, 45%, 0.06);
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 9px;
+  padding: 12px;
+}
+
+.box-text {
+  font-weight: 700;
+}
+
+.box-text-1 {
+  color: hsl(0, 100%, 67%);
+}
+
+.box-text-2 {
+  color: hsl(39, 100%, 56%);
+}
+
+.box-text-3 {
+  color: hsl(166, 100%, 37%);
+}
+
+.box-text-4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  padding: 10px 82px;
+  border-radius: 21px;
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+strong {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+em {
+  font-style: normal;
+  color: hsl(0, 1%, 63%);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 42em) {
+  body {
+    background-color: hsl(221, 100%, 96%);
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-item-1 {
+    margin-bottom: -22px;
+    margin-right: 0;
+    z-index: 0;
+  }
+
+  .flex-item-2 {
+    border-radius: 0;
+  }
+
+  .heading-2 {
+    margin-top: 32px;
+  }
+
+  .boxes {
+    margin-top: 20px;
+  }
+
+  .analysis {
+    width: auto;
+  }
+}
+
+@media (max-width: 21em) {
+  .flex-item-1,
+  .flex-item-2 {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .flex-item-2 {
+    height: auto;
+  }
+
+  .flex-item-1 {
+    padding-top: 12px;
+  }
+
+  .analysis {
+    width: auto;
+  }
+
+  .boxes {
+    width: 100%;
+  }
+
+  .heading-primary {
+    margin-top: 32px;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4 {
+    width: 90vw;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}
